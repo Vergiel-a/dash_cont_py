@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "automatizacao"
+version = "0.1.0"
+description = "\"Projeto de automatização de Dashboard de Demonstrativos Financeiros no Python\""
+authors = ["Luiz Henrique Barbosa Filho <luiz_rique-@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.9"
+wget = "^3.2"
+pandas = "^2.0.1"
+shiny = "^0.3.3"
+shinywidgets = "^0.2.0"
+plotly = "^5.14.1"
+numpy = "^1.24.3"
+rsconnect-python = "^1.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
