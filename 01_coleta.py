@@ -33,7 +33,7 @@ if not exist_path:
    os.makedirs("dados")
 
 # Salva os nomes das companhias em um arquivo csv
-names_companies.to_csv('./dados/names_companies.csv', index = False, sep = ';')
+names_companies.to_csv('./dados/names_companies.csv', index = False, sep = ';', encoding = 'latin1')
 
 # Realiza os download dos arquivos do DFP ---------------------------------------------------------------------------------------
                        

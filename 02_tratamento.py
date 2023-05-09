@@ -7,7 +7,7 @@ import os # biblioteca para gerenciar pastas
 # Importa e Trata os dados ---------------------------------------------------
 
 # Lê o arquivo do nomes das companhias e transforma em lista
-names_companies = pd.read_csv('./dados/names_companies.csv', sep = ';')['DENOM_SOCIAL'].tolist() # transforma em lista para usar no input do dashboard e filtragem de dados
+names_companies = pd.read_csv('./dados/names_companies.csv', sep = ';', encoding = 'latin1')['DENOM_SOCIAL'].tolist() # transforma em lista para usar no input do dashboard e filtragem de dados
 
 ## Balanço Patrimonial --------------------------------------------------------
 

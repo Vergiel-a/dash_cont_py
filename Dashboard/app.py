@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 # Lê o arquivo do nomes das companhias e transforma em lista
-names_companies = pd.read_csv('./dados/names_companies.csv', sep = ';')['DENOM_SOCIAL'].tolist()
+names_companies = pd.read_csv('./dados/names_companies.csv', sep = ';', encoding = 'latin1')['DENOM_SOCIAL'].tolist()
 
 # Realiza a leitura dos arquivos
 bp = pd.read_csv('./dados/bp.csv', sep = ';', encoding = 'latin1')
