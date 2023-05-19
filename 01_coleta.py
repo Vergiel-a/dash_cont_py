@@ -7,8 +7,8 @@ import os # biblioteca para gerenciar pastas
 # Informações das empresas ------------------------------------------------------------------
 
 # Se o arquivo já existir, o exclui
-if os.path.exists('./cad_cia_aberta.csv'):
-   os.remove('./cad_cia_aberta.csv')
+if os.path.exists('cad_cia_aberta.csv'):
+   os.remove('cad_cia_aberta.csv')
 
 # Baixa o arquivo de informações de empresas
 dest_file = wget.download(url = 'https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv')
@@ -33,7 +33,7 @@ if not exist_path:
    os.makedirs("dados")
 
 # Salva os nomes das companhias em um arquivo csv
-names_companies.to_csv('./dados/names_companies.csv', index = False, sep = ';', encoding = 'latin1')
+names_companies.to_csv('dados/names_companies.csv', index = False, sep = ';', encoding = 'latin1')
 
 # Realiza os download dos arquivos do DFP ---------------------------------------------------------------------------------------
                        
