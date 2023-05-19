@@ -170,10 +170,10 @@ if not exist_path:
 
 # Salva os arquivos em formato .csv
 
-bp_filtrado.to_csv('./dados/bp.csv', index = False, sep = ';', encoding = 'latin1')
-dre_filtrado.to_csv('./dados/dre.csv', index = False, sep = ';', encoding = 'latin1')
-dfc_filtrado.to_csv('./dados/dfc.csv', index = False, sep = ';', encoding = 'latin1')
-indic_liq.to_csv('./dados/indic_liq.csv', index = False, sep = ';', encoding = 'latin1')
-indic_end.to_csv('./dados/indic_end.csv', index = False, sep = ';', encoding = 'latin1')
-indic_enf.to_csv('./dados/indic_enf.csv', index = False, sep = ';', encoding = 'latin1')
-indic_rent.to_csv('./dados/indic_rent.csv', index = False, sep = ';', encoding = 'latin1')
+bp_filtrado.to_csv('dados/bp.csv', index = False, sep = ';', encoding = 'latin1')
+dre_filtrado.to_csv('dados/dre.csv', index = False, sep = ';', encoding = 'latin1')
+dfc_filtrado.to_csv('dados/dfc.csv', index = False, sep = ';', encoding = 'latin1')
+indic_liq.to_csv('dados/indic_liq.csv', index = False, sep = ';', encoding = 'latin1')
+indic_end.to_csv('dados/indic_end.csv', index = False, sep = ';', encoding = 'latin1')
+indic_enf.to_csv('dados/indic_enf.csv', index = False, sep = ';', encoding = 'latin1')
+indic_rent.to_csv('dados/indic_rent.csv', index = False, sep = ';', encoding = 'latin1')
