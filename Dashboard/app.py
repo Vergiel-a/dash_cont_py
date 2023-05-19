@@ -10,16 +10,16 @@ import numpy as np
 import pandas as pd
 
 # Lê o arquivo do nomes das companhias e transforma em lista
-names_companies = pd.read_csv('./dados/names_companies.csv', sep = ';', encoding = 'latin1')['DENOM_SOCIAL'].tolist()
+names_companies = pd.read_csv('dados/names_companies.csv', sep = ';', encoding = 'latin1')['DENOM_SOCIAL'].tolist()
 
 # Realiza a leitura dos arquivos
-bp = pd.read_csv('./dados/bp.csv', sep = ';', encoding = 'latin1')
-dre = pd.read_csv('./dados/dre.csv', sep = ';', encoding = 'latin1')
-dfc = pd.read_csv('./dados/dfc.csv',sep = ';', encoding = 'latin1')
-indic_liq = pd.read_csv('./dados/indic_liq.csv', sep = ';', encoding = 'latin1')
-indic_end = pd.read_csv('./dados/indic_end.csv', sep = ';', encoding = 'latin1')
-indic_enf = pd.read_csv('./dados/indic_enf.csv', sep = ';', encoding = 'latin1')
-indic_rent = pd.read_csv('./dados/indic_rent.csv', sep = ';', encoding = 'latin1')
+bp = pd.read_csv('dados/bp.csv', sep = ';', encoding = 'latin1')
+dre = pd.read_csv('dados/dre.csv', sep = ';', encoding = 'latin1')
+dfc = pd.read_csv('dados/dfc.csv',sep = ';', encoding = 'latin1')
+indic_liq = pd.read_csv('dados/indic_liq.csv', sep = ';', encoding = 'latin1')
+indic_end = pd.read_csv('dados/indic_end.csv', sep = ';', encoding = 'latin1')
+indic_enf = pd.read_csv('dados/indic_enf.csv', sep = ';', encoding = 'latin1')
+indic_rent = pd.read_csv('dados/indic_rent.csv', sep = ';', encoding = 'latin1')
 
 
 # Parte 1: Interface do usuário
