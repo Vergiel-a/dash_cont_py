@@ -163,17 +163,18 @@ indic_rent = (
 
 # Salva os arquivos de dados para criar o dashboard -----------------------------------------------
 ## Cria pasta caso não existir!
-exist_path = os.path.exists("dados") # Confirma existência
+exist_path = os.path.exists("Dashboard") # Confirma existência
 if not exist_path:
    # Cria a pasta
-   os.makedirs("dados")
+   os.makedirs("Dashboard")
 
 # Salva os arquivos em formato .csv
 
-bp_filtrado.to_csv('dados/bp.csv', index = False, sep = ';', encoding = 'latin1')
-dre_filtrado.to_csv('dados/dre.csv', index = False, sep = ';', encoding = 'latin1')
-dfc_filtrado.to_csv('dados/dfc.csv', index = False, sep = ';', encoding = 'latin1')
-indic_liq.to_csv('dados/indic_liq.csv', index = False, sep = ';', encoding = 'latin1')
-indic_end.to_csv('dados/indic_end.csv', index = False, sep = ';', encoding = 'latin1')
-indic_enf.to_csv('dados/indic_enf.csv', index = False, sep = ';', encoding = 'latin1')
-indic_rent.to_csv('dados/indic_rent.csv', index = False, sep = ';', encoding = 'latin1')
+bp_filtrado.to_csv('Dashboard/bp.csv', index = False, sep = ';', encoding = 'latin1')
+dre_filtrado.to_csv('Dashboard/dre.csv', index = False, sep = ';', encoding = 'latin1')
+dfc_filtrado.to_csv('Dashboard/dfc.csv', index = False, sep = ';', encoding = 'latin1')
+indic_liq.to_csv('Dashboard/indic_liq.csv', index = False, sep = ';', encoding = 'latin1')
+indic_end.to_csv('Dashboard/indic_end.csv', index = False, sep = ';', encoding = 'latin1')
+indic_enf.to_csv('Dashboard/indic_enf.csv', index = False, sep = ';', encoding = 'latin1')
+indic_rent.to_csv('Dashboard/indic_rent.csv', index = False, sep = ';', encoding = 'latin1')
+names_companies.to_csv('Dashboard/names_companies.csv', index = False, sep = ';', encoding = 'latin1')
