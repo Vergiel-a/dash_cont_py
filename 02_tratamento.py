@@ -177,4 +177,5 @@ indic_liq.to_csv('Dashboard/indic_liq.csv', index = False, sep = ';', encoding =
 indic_end.to_csv('Dashboard/indic_end.csv', index = False, sep = ';', encoding = 'latin1')
 indic_enf.to_csv('Dashboard/indic_enf.csv', index = False, sep = ';', encoding = 'latin1')
 indic_rent.to_csv('Dashboard/indic_rent.csv', index = False, sep = ';', encoding = 'latin1')
-names_companies.to_csv('Dashboard/names_companies.csv', index = False, sep = ';', encoding = 'latin1')
+names_companies_df = pd.read_csv('dados/names_companies.csv', sep = ';', encoding = 'latin1')
+names_companies_df.to_csv('Dashboard/names_companies.csv', index = False, sep = ';', encoding = 'latin1')
